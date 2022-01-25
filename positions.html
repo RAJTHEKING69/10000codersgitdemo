@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positions in CSS</title>
+        <style>
+            .parent_box{
+                background-color: cadetblue;
+                position: relative;
+                height: 500px;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                font-size: 30px;
+                
+            }
+            .static{
+                background-color: coral;
+                position: absolute;
+                z-index: 1000;
+                left: 80px;
+                
+            }
+            .relative{
+                background-color:rgb(185, 194, 55);
+                position: absolute;
+                z-index: 5;
+                left: 160px;
+                
+            }
+            .absolute{
+                background-color: rgb(99, 18, 175);
+                z-index: 1002;
+                position: absolute;
+                left: 240px;
+
+            }
+            .fixed{
+                background-color: rgb(177, 19, 19);
+                position: absolute;
+                z-index:1001;
+                left: 320px;
+                
+            }
+            .sticky{
+                background-color: rgb(63, 197, 36);
+                position: absolute;
+                z-index: 1;
+                left: 400px;
+            }
+           
+        </style>
+    </head>
+    
+    <body>
+        <div class="parent_box">
+            <div class="box static">Static</div>
+            <div class="box relative">Relative</div>
+            <div class="box fixed">fixed</div>
+           
+                 <div class="box absolute">Absolute</div>
+            
+            <div class="box sticky">Sticky</div>
+        </div>
+    </body>
+</html>

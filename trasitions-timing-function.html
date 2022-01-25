@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition-timing-function</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: cadetblue;
+                border: 1px solid black;
+            }
+            .ease:hover{
+                width: 300px;
+            }
+            .container>div:hover ~ div{
+                width: 300px;
+            }
+            .ease{
+                transition-timing-function: ease;
+                transition-duration: 2000ms;
+            }
+            .linear{
+                transition-timing-function: linear;
+                transition-duration: 2000ms;
+            }
+            .easein{
+                transition-timing-function: ease-in;
+                transition-duration: 2000ms;
+            }
+            .easeout{
+                transition-timing-function: ease-out;
+                transition-duration: 2000ms;
+            }
+            .easeinout{
+                transition-timing-function: ease-in-out;
+                transition-duration: 2000ms;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box ease">Ease</div>
+            <div class="box linear">Linear</div>
+            <div class="box easein">Ease-in</div>
+            <div class="box easeout">Ease-out</div>
+            <div class="box easeinout">Ease-in-out</div>
+        </div>
+    </body>
+</html>

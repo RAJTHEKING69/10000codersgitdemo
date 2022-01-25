@@ -1,0 +1,139 @@
+/* header Section */
+*{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.logo{
+    flex:10%;
+}
+
+.nav_links{
+    flex:90%
+}
+.nav_links ul{
+    display: flex;
+}
+.nav_links li{
+    list-style-type: none;
+    flex: 1;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+         .header{
+             display: flex;
+             flex-direction: column;
+             background-color: brown;
+         }   
+         .logo{
+            flex:100%;
+            text-align: center;
+        }  
+    
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        background : none;
+    }
+    .logo{
+        flex:100%;
+        text-align: center;
+    }
+    .nav_links ul{
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+    }
+    .nav_links li{
+        text-align: center;
+        background-color: cornflowerblue;
+        font-size: 20px;
+        border: 3px solid white;
+    }
+    .nav_links{
+        flex:100%;
+    }
+
+}
+/*Banner Content*/
+
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1641041375081-1511939556fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    height: 300px;
+
+}
+
+.banner h2{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 220px;
+}
+/*Main Content*/
+
+/*Row 1*/
+
+.content1-row{
+    display: flex;
+}
+
+.content1-row img{
+    flex: 1;
+    width: 100%;
+    height: 300px;
+    
+}
+.content1-row section{
+    flex:1
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .content1-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*Row 2*/
+.content2-row{
+    display: flex;
+}
+
+.content2-row img{
+    flex: 1;
+    width: 100%;
+    height: 300px;
+}
+.content2-row section{
+    flex:1
+}
+@media screen and (min-width:320px) and (max-width:767px) {
+    .content2-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*Footer*/
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 30px;
+    text-align: center;
+    height: 200px;
+}

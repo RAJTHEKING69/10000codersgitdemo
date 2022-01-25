@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Css Display properties
+        </title>
+        <style>
+           div{
+               border: 10px dashed black;
+               margin: 20px;
+               width: 50%;
+               height: 50%;
+               font-size: 30px;
+               padding: 60px;
+               background-image: url("https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+               background-size: 100px 100px;
+               background-repeat: no-repeat;
+           }
+             .padding-box{
+                 background-origin: padding-box;
+             }
+             .content-box{
+                 background-origin: content-box;
+             }
+             .border-box{
+                 background-origin: border-box;
+             }
+            
+        </style>
+    </head>
+    <body>
+        <div class="padding-box">I am a padding box</div>
+        <div class="content-box">I am a content box</div>
+        <div class="border-box">I am a border box</div>
+</body>
+</html>
